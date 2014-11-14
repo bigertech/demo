@@ -1,0 +1,120 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.33
+4 verbose readDependencies using package.json deps
+5 verbose install where, deps [ '/Users/Tracy/Documents/hi/uploadImage',
+5 verbose install   [ 'bluebird',
+5 verbose install     'body-parser',
+5 verbose install     'cookie-parser',
+5 verbose install     'debug',
+5 verbose install     'express',
+5 verbose install     'jade',
+5 verbose install     'morgan',
+5 verbose install     'serve-favicon',
+5 verbose install     'express-session' ] ]
+6 info preinstall uploadImage@0.0.0
+7 verbose readDependencies using package.json deps
+8 verbose already installed skipping bluebird@^2.3.11 /Users/Tracy/Documents/hi/uploadImage
+9 verbose already installed skipping body-parser@~1.8.1 /Users/Tracy/Documents/hi/uploadImage
+10 verbose already installed skipping cookie-parser@~1.3.3 /Users/Tracy/Documents/hi/uploadImage
+11 verbose already installed skipping debug@~2.0.0 /Users/Tracy/Documents/hi/uploadImage
+12 verbose already installed skipping express@~4.9.0 /Users/Tracy/Documents/hi/uploadImage
+13 verbose already installed skipping jade@~1.6.0 /Users/Tracy/Documents/hi/uploadImage
+14 verbose already installed skipping morgan@~1.3.0 /Users/Tracy/Documents/hi/uploadImage
+15 verbose already installed skipping serve-favicon@~2.1.3 /Users/Tracy/Documents/hi/uploadImage
+16 verbose cache add [ 'express-session@latest', null ]
+17 verbose cache add name=undefined spec="express-session@latest" args=["express-session@latest",null]
+18 verbose parsed url { protocol: null,
+18 verbose parsed url   slashes: null,
+18 verbose parsed url   auth: null,
+18 verbose parsed url   host: null,
+18 verbose parsed url   port: null,
+18 verbose parsed url   hostname: null,
+18 verbose parsed url   hash: null,
+18 verbose parsed url   search: null,
+18 verbose parsed url   query: null,
+18 verbose parsed url   pathname: 'express-session@latest',
+18 verbose parsed url   path: 'express-session@latest',
+18 verbose parsed url   href: 'express-session@latest' }
+19 verbose cache add name="express-session" spec="latest" args=["express-session","latest"]
+20 verbose parsed url { protocol: null,
+20 verbose parsed url   slashes: null,
+20 verbose parsed url   auth: null,
+20 verbose parsed url   host: null,
+20 verbose parsed url   port: null,
+20 verbose parsed url   hostname: null,
+20 verbose parsed url   hash: null,
+20 verbose parsed url   search: null,
+20 verbose parsed url   query: null,
+20 verbose parsed url   pathname: 'latest',
+20 verbose parsed url   path: 'latest',
+20 verbose parsed url   href: 'latest' }
+21 verbose addNamed [ 'express-session', 'latest' ]
+22 verbose addNamed [ null, null ]
+23 silly lockFile fa47ee87-express-session-latest express-session@latest
+24 verbose lock express-session@latest /Users/Tracy/.npm/fa47ee87-express-session-latest.lock
+25 info addNameTag [ 'express-session', 'latest' ]
+26 verbose request where is /express-session
+27 verbose request registry https://registry.npmjs.org/
+28 verbose request id c1e7d41cdecf0dc5
+29 verbose url raw /express-session
+30 verbose url resolving [ 'https://registry.npmjs.org/', './express-session' ]
+31 verbose url resolved https://registry.npmjs.org/express-session
+32 verbose request where is https://registry.npmjs.org/express-session
+33 info trying registry request attempt 1 at 11:08:06
+34 verbose etag "5XY51F8JB3BYHRZ4TZCWJO11C"
+35 http GET https://registry.npmjs.org/express-session
+36 http 304 https://registry.npmjs.org/express-session
+37 silly registry.get cb [ 304,
+37 silly registry.get   { date: 'Thu, 13 Nov 2014 03:08:06 GMT',
+37 silly registry.get     server: 'Apache',
+37 silly registry.get     via: '1.1 varnish',
+37 silly registry.get     'last-modified': 'Thu, 13 Nov 2014 03:08:06 GMT',
+37 silly registry.get     'cache-control': 'max-age=60',
+37 silly registry.get     etag: '"5XY51F8JB3BYHRZ4TZCWJO11C"',
+37 silly registry.get     age: '30',
+37 silly registry.get     'x-served-by': 'cache-hk90-HKG',
+37 silly registry.get     'x-cache': 'HIT',
+37 silly registry.get     'x-cache-hits': '1',
+37 silly registry.get     'x-timer': 'S1415848086.374991,VS0,VE0',
+37 silly registry.get     vary: 'Accept',
+37 silly registry.get     'content-length': '0',
+37 silly registry.get     'keep-alive': 'timeout=10, max=50',
+37 silly registry.get     connection: 'Keep-Alive' } ]
+38 verbose etag https://registry.npmjs.org/express-session from cache
+39 verbose addNamed [ 'express-session', '1.9.1' ]
+40 verbose addNamed [ '1.9.1', '1.9.1' ]
+41 silly lockFile c0a3989b-express-session-1-9-1 express-session@1.9.1
+42 verbose lock express-session@1.9.1 /Users/Tracy/.npm/c0a3989b-express-session-1-9-1.lock
+43 silly lockFile 8969b713-ession-express-session-1-9-1-tgz https://registry.npmjs.org/express-session/-/express-session-1.9.1.tgz
+44 verbose lock https://registry.npmjs.org/express-session/-/express-session-1.9.1.tgz /Users/Tracy/.npm/8969b713-ession-express-session-1-9-1-tgz.lock
+45 verbose addRemoteTarball [ 'https://registry.npmjs.org/express-session/-/express-session-1.9.1.tgz',
+45 verbose addRemoteTarball   '27f9192d04eec2c9106dfd3315cdc98b48fdfd3b' ]
+46 info retry fetch attempt 1 at 11:08:06
+47 verbose fetch to= /var/folders/41/_2n4lx193l725tyjygwd56x80000gn/T/npm-26888-nORYblVc/registry.npmjs.org/express-session/-/express-session-1.9.1.tgz
+48 http GET https://registry.npmjs.org/express-session/-/express-session-1.9.1.tgz
+49 http 200 https://registry.npmjs.org/express-session/-/express-session-1.9.1.tgz
+50 silly lockFile 8969b713-ession-express-session-1-9-1-tgz https://registry.npmjs.org/express-session/-/express-session-1.9.1.tgz
+51 silly lockFile 8969b713-ession-express-session-1-9-1-tgz https://registry.npmjs.org/express-session/-/express-session-1.9.1.tgz
+52 silly lockFile c0a3989b-express-session-1-9-1 express-session@1.9.1
+53 silly lockFile c0a3989b-express-session-1-9-1 express-session@1.9.1
+54 silly lockFile fa47ee87-express-session-latest express-session@latest
+55 silly lockFile fa47ee87-express-session-latest express-session@latest
+56 error Error: EACCES, mkdir '/Users/Tracy/.npm/express-session/1.9.1'
+56 error  { [Error: EACCES, mkdir '/Users/Tracy/.npm/express-session/1.9.1']
+56 error   errno: 3,
+56 error   code: 'EACCES',
+56 error   path: '/Users/Tracy/.npm/express-session/1.9.1',
+56 error   parent: 'uploadImage' }
+57 error Please try running this command again as root/Administrator.
+58 error System Darwin 14.0.0
+59 error command "node" "/usr/local/bin/npm" "install"
+60 error cwd /Users/Tracy/Documents/hi/uploadImage
+61 error node -v v0.10.33
+62 error npm -v 1.4.28
+63 error path /Users/Tracy/.npm/express-session/1.9.1
+64 error code EACCES
+65 error errno 3
+66 error stack Error: EACCES, mkdir '/Users/Tracy/.npm/express-session/1.9.1'
+67 verbose exit [ 3, true ]
