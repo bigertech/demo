@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Post</title>
+    <link href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <button type="button" class="btn btn-default" onclick="rating('star')">此文甚好</button>
+    <button type="button" class="btn btn-default" onclick="rating('hate')">此文太水</button>
+    <button type="button" class="btn btn-default" onclick="cancelRating('star')">此文甚好(取消)</button>
+    <button type="button" class="btn btn-default" onclick="cancelRating('hate')">此文太水(取消)</button>
+    <hr/>
+    <button type="button" class="btn btn-default" onclick="getRating()">获取文章赞数和踩数</button>
+    <button type="button" class="btn btn-default" onclick="getRating_star()">获取文章赞数</button>
+    <button type="button" class="btn btn-default" onclick="getRating_hate()">获取文章踩数</button>
+
+    <script src="http://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+    <script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        var post_id = '1';
+        function getRating(){
+            $.ajax({
+                url     :'/fapi/post/get-rating',
+                type    :'get',
+                dataType:'json',
+                data    :{
+                    post_id : post_id
+                },
+                success:function(data){
+                    console.log(data);
+                }
+            });
+        }
+
+        function getRating_star() {
+            $.ajax({
+                url     :'/fapi/post/get-rating',
+                type    :'get',
+                dataType:'json',
+                data    :{
+                    post_id : post_id,
+                    type    : 'star'
+                },
+                success:function(data){
+                    console.log(data);
+                }
+            });
+        }
+
+        function getRating_hate() {
+            $.ajax({
+                url     :'/fapi/post/get-rating',
+                type    :'get',
+                dataType:'json',
+                data    :{
+                    post_id : post_id,
+                    type    : 'hate'
+                },
+                success:function(data){
+                    console.log(data);
+                }
+            });
+        }
+
+        function rating(type){
+            $.ajax({
+                url     :'/fapi/post/rating',
+                type    :'post',
+                dataType:'json',
+                data    :{
+                    post_id : post_id,
+                    type    : type
+                },
+                success:function(data){
+                    console.log(data);
+                }
+            });
+        }
+
+        function cancelRating(type){
+            $.ajax({
+                url     :'/fapi/post/cancel-rating',
+                type    :'post',
+                dataType:'json',
+                data    :{
+                    post_id : post_id,
+                    type    : type
+                },
+                success:function(data){
+                    console.log(data);
+                }
+            });
+        }
+    </script>
+</body>
+</html>
